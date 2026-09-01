@@ -775,13 +775,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788201664.934156] [runnervmgx7h7:4642 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x557f86334030 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1788201664.934574] [runnervmgx7h7:4642 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmgx7h7:04642] pml_ucx.c:313  Error: Failed to create UCP worker
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:      192
                      variables with only lower bounds:      182
                 variables with lower and upper bounds:       10
@@ -796,12 +789,12 @@ Total number of inequality constraints...............:      124
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 44
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.1871834676333908e+01    2.5517140455722889e+04
-Dual infeasibility......:   1.1101599302800723e-09    1.2951865853267508e-06
-Constraint violation....:   2.4130346599244314e-10    2.4130346599244314e-10
+Objective...............:   2.1871834676333940e+01    2.5517140455722929e+04
+Dual infeasibility......:   1.1101032533946652e-09    1.2951204622937758e-06
+Constraint violation....:   2.4130485349911692e-10    2.4130485349911692e-10
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   3.1624119734121808e-08    3.6894806356475443e-05
-Overall NLP error.......:   3.1624119734121808e-08    3.6894806356475443e-05
+Complementarity.........:   3.1624119734241028e-08    3.6894806356614533e-05
+Overall NLP error.......:   3.1624119734241028e-08    3.6894806356614533e-05
 
 
 Number of objective function evaluations             = 107
@@ -811,7 +804,7 @@ Number of inequality constraint evaluations          = 107
 Number of equality constraint Jacobian evaluations   = 48
 Number of inequality constraint Jacobian evaluations = 48
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 37.444
+Total seconds in IPOPT                               = 42.959
 
 EXIT: Optimal Solution Found.
 
@@ -1057,12 +1050,12 @@ Total number of inequality constraints...............:      124
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 44
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.1871834676333862e+01    2.5517140455722838e+04
-Dual infeasibility......:   1.1100929005649622e-09    1.2951083839924557e-06
-Constraint violation....:   2.4130050928179312e-10    2.4130050928179312e-10
+Objective...............:   2.1871834676333826e+01    2.5517140455722794e+04
+Dual infeasibility......:   1.1100800358556627e-09    1.2950933751649397e-06
+Constraint violation....:   2.4130197937814993e-10    2.4130197937814993e-10
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   3.1624119734253965e-08    3.6894806356629623e-05
-Overall NLP error.......:   3.1624119734253965e-08    3.6894806356629623e-05
+Complementarity.........:   3.1624119734248784e-08    3.6894806356623579e-05
+Overall NLP error.......:   3.1624119734248784e-08    3.6894806356623579e-05
 
 
 Number of objective function evaluations             = 107
@@ -1072,7 +1065,10 @@ Number of inequality constraint evaluations          = 107
 Number of equality constraint Jacobian evaluations   = 48
 Number of inequality constraint Jacobian evaluations = 48
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT    
+Total seconds in IPOPT                               = 42.738
+
+EXIT: Optimal Solution Found.
+
 
 Optimization Problem -- Optimization using pyOpt_sparse
 ================================================================================
@@ -1094,10 +1090,6 @@ Optimization Problem -- Optimization using pyOpt_sparse
    Constraints (i - inequality, e - equality)
       Index  Name                                                          Type          Lower           Value           Upper    Status  Lagrange Multiplier (N/A)
         186  mission1.gross_mass_resid                                        i   0.000000E+00    1.122580E-07    1.000000E+30         l    9.00000E+100
-
-                           = 37.289
-
-EXIT: Optimal Solution Found.
 </pre></div>
 </div>
 <div class="output text_html">

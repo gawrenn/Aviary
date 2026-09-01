@@ -702,13 +702,6 @@ Later in this example, we increase this order which will allow the optimizer to 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788201567.965065] [runnervmgx7h7:4605 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x564a04eefbf0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1788201567.965314] [runnervmgx7h7:4605 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmgx7h7:04605] pml_ucx.c:313  Error: Failed to create UCP worker
-</pre></div>
-</div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/core/total_jac.py:1907: DerivativesWarning:The following design variables have no impact on the constraints or objective at the current design point:
   traj.climb_1.t_initial, inds=[0]
 </pre></div>
@@ -727,12 +720,12 @@ Total number of inequality constraints...............:       27
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 22
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.5497020995242754e+00    2.5497020995242754e+00
-Dual infeasibility......:   1.7762095243089216e-08    1.7762095243089216e-08
-Constraint violation....:   6.5976386215613387e-15    6.5976386215613387e-15
+Objective...............:   2.5497020995242869e+00    2.5497020995242869e+00
+Dual infeasibility......:   1.7762093716528944e-08    1.7762093716528944e-08
+Constraint violation....:   1.2673801496756216e-14    1.2673801496756216e-14
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   9.0944744385288708e-08    9.0944744385288708e-08
-Overall NLP error.......:   9.0944744385288708e-08    9.0944744385288708e-08
+Complementarity.........:   9.0944744385309447e-08    9.0944744385309447e-08
+Overall NLP error.......:   9.0944744385309447e-08    9.0944744385309447e-08
 
 
 Number of objective function evaluations             = 28
@@ -742,7 +735,7 @@ Number of inequality constraint evaluations          = 28
 Number of equality constraint Jacobian evaluations   = 24
 Number of inequality constraint Jacobian evaluations = 24
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 4.593
+Total seconds in IPOPT                               = 5.812
 
 EXIT: Optimal Solution Found.
 
@@ -798,7 +791,7 @@ However, we see that the optimizer chose to decrease the Mach number during the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10204.47707117192
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10204.47707117196
 </pre></div>
 </div>
 </div>
@@ -811,7 +804,7 @@ However, we see that the optimizer chose to decrease the Mach number during the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22497.020995242754
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22497.02099524284
 </pre></div>
 </div>
 </div>
@@ -890,12 +883,12 @@ Total number of inequality constraints...............:       27
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 22
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.5637089674782154e+00    2.5637089674782154e+00
-Dual infeasibility......:   3.9054363236268254e-08    3.9054363236268254e-08
-Constraint violation....:   5.3401177262484301e-15    5.3401177262484301e-15
+Objective...............:   2.5637089674781981e+00    2.5637089674781981e+00
+Dual infeasibility......:   3.9054361751350556e-08    3.9054361751350556e-08
+Constraint violation....:   1.2609955974567930e-14    1.2609955974567930e-14
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   9.0971568541194864e-08    9.0971568541194864e-08
-Overall NLP error.......:   9.0971568541194864e-08    9.0971568541194864e-08
+Complementarity.........:   9.0971568541170406e-08    9.0971568541170406e-08
+Overall NLP error.......:   9.0971568541170406e-08    9.0971568541170406e-08
 
 
 Number of objective function evaluations             = 28
@@ -905,7 +898,7 @@ Number of inequality constraint evaluations          = 28
 Number of equality constraint Jacobian evaluations   = 24
 Number of inequality constraint Jacobian evaluations = 24
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 4.660
+Total seconds in IPOPT                               = 5.573
 
 EXIT: Optimal Solution Found.
 
@@ -948,7 +941,7 @@ Let’s take a look at the fuel burn value:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10268.011155486967
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10268.011155486887
 </pre></div>
 </div>
 </div>
@@ -1052,8 +1045,7 @@ Number of inequality constraint evaluations          = 69
 Number of equality constraint Jacobian evaluations   = 51
 Number of inequality constraint Jacobian evaluations = 51
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT       
-                        = 11.175
+Total seconds in IPOPT                               = 14.012
 
 EXIT: Maximum Number of Iterations Exceeded.
 </pre></div>
