@@ -649,9 +649,9 @@ This command normally needs the name of the aircraft csv file and phase_info fil
   warnings.warn(&quot;matplotlib not found, plotting disabled.&quot;)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788881651.282667] [runnervmejwal:4425 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55eb1f3ebdb0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1788881651.283182] [runnervmejwal:4425 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-[runnervmejwal:04425] pml_ucx.c:313  Error: Failed to create UCP worker
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788888082.720805] [runnervmlun5p:4295 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55e875ab08b0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1788888082.721121] [runnervmlun5p:4295 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+[runnervmlun5p:04295] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:       96
@@ -668,12 +668,12 @@ Total number of inequality constraints...............:       61
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 15
 
                                    (scaled)                 (unscaled)
-Objective...............:   1.3813638330255271e+00    1.3813638330255271e+00
-Dual infeasibility......:   3.1079967615559751e-08    3.1079967615559751e-08
-Constraint violation....:   9.6156506993603520e-15    9.6156506993603520e-15
+Objective...............:   1.3813638330255169e+00    1.3813638330255169e+00
+Dual infeasibility......:   3.1079969912333607e-08    3.1079969912333607e-08
+Constraint violation....:   3.8687981166771266e-15    3.8687981166771266e-15
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   9.0922310433387794e-08    9.0922310433387794e-08
-Overall NLP error.......:   9.0922310433387794e-08    9.0922310433387794e-08
+Complementarity.........:   9.0922310433393074e-08    9.0922310433393074e-08
+Overall NLP error.......:   9.0922310433393074e-08    9.0922310433393074e-08
 
 
 Number of objective function evaluations             = 16
@@ -683,7 +683,7 @@ Number of inequality constraint evaluations          = 16
 Number of equality constraint Jacobian evaluations   = 16
 Number of inequality constraint Jacobian evaluations = 16
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 5.586
+Total seconds in IPOPT                               = 5.486
 
 EXIT: Optimal Solution Found.
 
@@ -721,9 +721,9 @@ The following command explicitly points to the files used in the above run of th
   warnings.warn(&quot;matplotlib not found, plotting disabled.&quot;)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788881667.849149] [runnervmejwal:4434 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55f5f7d1d7c0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1788881667.849494] [runnervmejwal:4434 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-[runnervmejwal:04434] pml_ucx.c:313  Error: Failed to create UCP worker
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788888100.496367] [runnervmlun5p:4305 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55c0fb77ecd0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1788888100.496681] [runnervmlun5p:4305 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+[runnervmlun5p:04305] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:       96
@@ -740,12 +740,12 @@ Total number of inequality constraints...............:       61
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 15
 
                                    (scaled)                 (unscaled)
-Objective...............:   1.3813638330255169e+00    1.3813638330255169e+00
-Dual infeasibility......:   3.1079969912333607e-08    3.1079969912333607e-08
-Constraint violation....:   3.8687981166771266e-15    3.8687981166771266e-15
+Objective...............:   1.3813638330255111e+00    1.3813638330255111e+00
+Dual infeasibility......:   3.1079967650254168e-08    3.1079967650254168e-08
+Constraint violation....:   7.4120662947341693e-15    7.4120662947341693e-15
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   9.0922310433393074e-08    9.0922310433393074e-08
-Overall NLP error.......:   9.0922310433393074e-08    9.0922310433393074e-08
+Complementarity.........:   9.0922310433401121e-08    9.0922310433401121e-08
+Overall NLP error.......:   9.0922310433401121e-08    9.0922310433401121e-08
 
 
 Number of objective function evaluations             = 16
@@ -755,12 +755,12 @@ Number of inequality constraint evaluations          = 16
 Number of equality constraint Jacobian evaluations   = 16
 Number of inequality constraint Jacobian evaluations = 16
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 5.523
+Total seconds in IPOPT                               = 5.471
 
 EXIT: Optimal Solution Found.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization Problem -- Optimization using pyOpt_sparse
+
+
+Optimization Problem -- Optimization using pyOpt_sparse
 ================================================================================
     Objective Function: _objfunc
 
@@ -796,11 +796,11 @@ EXIT: Optimal Solution Found.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788881682.487698] [runnervmejwal:4407 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x562a4c983900 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1788881682.488025] [runnervmejwal:4407 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788888115.748951] [runnervmlun5p:4277 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x560e444a7770 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1788888115.749237] [runnervmlun5p:4277 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmejwal:04407] pml_ucx.c:313  Error: Failed to create UCP worker
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmlun5p:04277] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:       96
@@ -817,12 +817,12 @@ Total number of inequality constraints...............:       61
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 15
 
                                    (scaled)                 (unscaled)
-Objective...............:   1.3813638330255169e+00    1.3813638330255169e+00
-Dual infeasibility......:   3.1079968892316229e-08    3.1079968892316229e-08
-Constraint violation....:   4.8992463468842976e-15    4.8992463468842976e-15
+Objective...............:   1.3813638330255111e+00    1.3813638330255111e+00
+Dual infeasibility......:   3.1079967650254168e-08    3.1079967650254168e-08
+Constraint violation....:   7.4120662947341693e-15    7.4120662947341693e-15
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   9.0922310433391473e-08    9.0922310433391473e-08
-Overall NLP error.......:   9.0922310433391473e-08    9.0922310433391473e-08
+Complementarity.........:   9.0922310433401121e-08    9.0922310433401121e-08
+Overall NLP error.......:   9.0922310433401121e-08    9.0922310433401121e-08
 
 
 Number of objective function evaluations             = 16
@@ -832,7 +832,7 @@ Number of inequality constraint evaluations          = 16
 Number of equality constraint Jacobian evaluations   = 16
 Number of inequality constraint Jacobian evaluations = 16
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 5.541
+Total seconds in IPOPT                               = 5.358
 
 EXIT: Optimal Solution Found.
 
