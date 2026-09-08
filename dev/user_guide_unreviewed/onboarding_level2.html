@@ -719,6 +719,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmejwal:05294] pml_ucx.c:313  Error: Failed to create UCP worker
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788882253.659897] [runnervmejwal:5294 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55f034332fa0 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1788882253.660193] [runnervmejwal:5294 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>req_fuel_mass &gt; max_wingfuel_mass, adding a body tank
 </pre></div>
 </div>
@@ -751,7 +758,7 @@ Number of inequality constraint evaluations          = 1
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 1.501
+Total seconds in IPOPT                               = 1.388
 
 EXIT: Maximum Number of Iterations Exceeded.
 
@@ -1501,6 +1508,11 @@ done
   warnings.warn(&quot;matplotlib not found, plotting disabled.&quot;)
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1788882289.995756] [runnervmejwal:5330 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x561e4b0a4840 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1788882289.996105] [runnervmejwal:5330 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+[runnervmejwal:05330] pml_ucx.c:313  Error: Failed to create UCP worker
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:       96
                      variables with only lower bounds:       93
                 variables with lower and upper bounds:        3
@@ -1516,7 +1528,7 @@ Number of Iterations....: 0
 
                                    (scaled)                 (unscaled)
 Objective...............:   3.9800875570924603e+00    3.9800875570924603e+00
-Dual infeasibility......:   7.8792026331662024e-01    7.8792026331662024e-01
+Dual infeasibility......:   7.8792026331676346e-01    7.8792026331676346e-01
 Constraint violation....:   1.9006004373650107e+00    1.9006004373650107e+00
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
 Complementarity.........:   7.9560101797999998e+00    7.9560101797999998e+00
@@ -1530,7 +1542,7 @@ Number of inequality constraint evaluations          = 1
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 0.936
+Total seconds in IPOPT                               = 0.824
 
 EXIT: Maximum Number of Iterations Exceeded.
 
