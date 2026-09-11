@@ -592,6 +592,9 @@ Mach [0.   0.2  0.4  0.5  0.6  0.7  0.75 0.8  0.85 0.9 ]
 Angle of Attack (deg) [-2.  0.  2.  4.  6.  8. 10.]
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/core/constants.py:16: OMDeprecationWarning:The INF_BOUND sentinel in OpenMDAO is deprecated. Infinite bounds should now be specified using None or +/-np.inf.
+</pre></div>
+</div>
 </div>
 </div>
 <p>In a structured grid, interpolation data must be present for every combination of inputs. In other words, our <code class="docutils literal notranslate"><span class="pre">ExternalAero</span></code> component must run a full factorial of points spanning those 3 variables. The Aviary variable hierarchy includes two variables for the polars: <code class="docutils literal notranslate"><span class="pre">Aircraft.Design.LIFT_POLAR</span></code>, and <code class="docutils literal notranslate"><span class="pre">Aircraft.Design.DRAG_POLAR</span></code>. The data in each of these polars should be a <code class="docutils literal notranslate"><span class="pre">n</span></code> x <code class="docutils literal notranslate"><span class="pre">m</span></code> x <code class="docutils literal notranslate"><span class="pre">k</span></code> numpy array, where <code class="docutils literal notranslate"><span class="pre">n</span></code> is the number of altitudes, <code class="docutils literal notranslate"><span class="pre">m</span></code> is the number of mach numbers, and <code class="docutils literal notranslate"><span class="pre">k</span></code> is the number of angles of attack. The <code class="docutils literal notranslate"><span class="pre">ExternalAero</span></code> will need to compute these values and place them into an array of this shape.</p>
