@@ -719,11 +719,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1789414657.610119] [runnervmlun5p:5129 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x5640dc2fda10 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1789414657.610402] [runnervmlun5p:5129 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1789999625.376261] [runnervmlun5p:5070 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x5578a7b57450 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1789999625.376551] [runnervmlun5p:5070 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmlun5p:05129] pml_ucx.c:313  Error: Failed to create UCP worker
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervmlun5p:05070] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>req_fuel_mass &gt; max_wingfuel_mass, adding a body tank
@@ -758,7 +758,7 @@ Number of inequality constraint evaluations          = 1
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 0.980
+Total seconds in IPOPT                               = 1.143
 
 EXIT: Maximum Number of Iterations Exceeded.
 
@@ -1511,9 +1511,9 @@ done
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/core/constants.py:16: OMDeprecationWarning:The INF_BOUND sentinel in OpenMDAO is deprecated. Infinite bounds should now be specified using None or +/-np.inf.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1789414685.163207] [runnervmlun5p:5165 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x561ed026e600 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1789414685.163503] [runnervmlun5p:5165 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-[runnervmlun5p:05165] pml_ucx.c:313  Error: Failed to create UCP worker
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1789999654.987391] [runnervmlun5p:5107 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x555e27323580 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1789999654.987686] [runnervmlun5p:5107 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
+[runnervmlun5p:05107] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of variables............................:       96
@@ -1531,7 +1531,7 @@ Number of Iterations....: 0
 
                                    (scaled)                 (unscaled)
 Objective...............:   3.9800875570924603e+00    3.9800875570924603e+00
-Dual infeasibility......:   7.8792026331667775e-01    7.8792026331667775e-01
+Dual infeasibility......:   7.8792026331668863e-01    7.8792026331668863e-01
 Constraint violation....:   1.9006004373650107e+00    1.9006004373650107e+00
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
 Complementarity.........:   7.9560101797999998e+00    7.9560101797999998e+00
@@ -1545,7 +1545,7 @@ Number of inequality constraint evaluations          = 1
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 0.430
+Total seconds in IPOPT                               = 0.575
 
 EXIT: Maximum Number of Iterations Exceeded.
 
