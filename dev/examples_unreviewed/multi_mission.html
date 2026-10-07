@@ -776,9 +776,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1791382631.413306] [runnervm8df0l:4466 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55ef16698530 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
-[1791382631.413611] [runnervm8df0l:4466 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
-The following variables have been overridden by the aircraft definition:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following variables have been overridden by the aircraft definition:
   &#39;aircraft:design:landing_to_takeoff_mass_ratio  0.84  unitless
   &#39;aircraft:engine:mass  [8071.35]  lbm
   &#39;aircraft:fuel:auxiliary_fuel_mass_capacity  0.0  lbm
@@ -794,9 +792,6 @@ The following variables have been overridden by the aircraft definition:
   &#39;aircraft:wing:mass  15288.0  lbm
   &#39;aircraft:wing:wetted_area  2423.02  ft**2
   &#39;mission:takeoff:lift_over_drag  17.35  unitless
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervm8df0l:04466] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following variables have been overridden by the aircraft definition:
@@ -831,12 +826,12 @@ Total number of inequality constraints...............:      124
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 44
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.1871834676333862e+01    2.5517140455722838e+04
-Dual infeasibility......:   1.1102221235861347e-09    1.2952591441838237e-06
-Constraint violation....:   2.4130473787356024e-10    2.4130473787356024e-10
+Objective...............:   2.1871834676333911e+01    2.5517140455722896e+04
+Dual infeasibility......:   1.1099936605043485e-09    1.2949926039217398e-06
+Constraint violation....:   2.4130181419878340e-10    2.4130181419878340e-10
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   3.1624119734148735e-08    3.6894806356506851e-05
-Overall NLP error.......:   3.1624119734148735e-08    3.6894806356506851e-05
+Complementarity.........:   3.1624119734199841e-08    3.6894806356566475e-05
+Overall NLP error.......:   3.1624119734199841e-08    3.6894806356566475e-05
 
 
 Number of objective function evaluations             = 107
@@ -846,7 +841,7 @@ Number of inequality constraint evaluations          = 107
 Number of equality constraint Jacobian evaluations   = 48
 Number of inequality constraint Jacobian evaluations = 48
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 21.221
+Total seconds in IPOPT                               = 36.334
 
 EXIT: Optimal Solution Found.
 </pre></div>
@@ -1111,12 +1106,12 @@ Total number of inequality constraints...............:      124
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of Iterations....: 44
 
                                    (scaled)                 (unscaled)
-Objective...............:   2.1871834676333883e+01    2.5517140455722860e+04
-Dual infeasibility......:   1.1100542925592809e-09    1.2950633413191610e-06
-Constraint violation....:   2.4130338340276006e-10    2.4130338340276006e-10
+Objective...............:   2.1871834676333901e+01    2.5517140455722882e+04
+Dual infeasibility......:   1.1100858298320741e-09    1.2951001348040864e-06
+Constraint violation....:   2.4130330081307698e-10    2.4130330081307698e-10
 Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
-Complementarity.........:   3.1624119734205360e-08    3.6894806356572920e-05
-Overall NLP error.......:   3.1624119734205360e-08    3.6894806356572920e-05
+Complementarity.........:   3.1624119734170275e-08    3.6894806356531984e-05
+Overall NLP error.......:   3.1624119734170275e-08    3.6894806356531984e-05
 
 
 Number of objective function evaluations             = 107
@@ -1126,10 +1121,7 @@ Number of inequality constraint evaluations          = 107
 Number of equality constraint Jacobian evaluations   = 48
 Number of inequality constraint Jacobian evaluations = 48
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                           = 21.133
+Total seconds in IPOPT                               = 35.506
 
 EXIT: Optimal Solution Found.
 </pre></div>
