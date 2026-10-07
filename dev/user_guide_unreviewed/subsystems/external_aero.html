@@ -704,12 +704,8 @@ Angle of Attack (deg) [-2.  0.  2.  4.  6.  8. 10.]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;subsystems&#39; not found in reports registry.
-/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;list_options&#39; not found in reports registry.
-/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;subsystems&#39; not found in reports registry.
-/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;list_options&#39; not found in reports registry.
-/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;subsystems&#39; not found in reports registry.
-/home/runner/work/Aviary/Aviary/.openmdao-pixi/.pixi/envs/py313/lib/python3.13/site-packages/openmdao/utils/reports_system.py:304: OpenMDAOWarning:Report with name &#39;list_options&#39; not found in reports registry.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1791382984.488888] [runnervm8df0l:5374 :0]        ib_iface.c:1269 UCX  ERROR mana_0: iface 0x55ace6493b60 failed to create UD QP TX wr:256 sge:6 inl:64 resp:0 RX wr:4096 sge:1 resp:0 failed: Operation not supported
+[1791382984.489190] [runnervm8df0l:5374 :0]      ucp_worker.c:1412 UCX  ERROR uct_iface_open(ud_verbs/mana_0:1) failed: Input/output error
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following variables have been overridden by the aircraft definition:
@@ -726,6 +722,9 @@ Angle of Attack (deg) [-2.  0.  2.  4.  6.  8. 10.]
   &#39;aircraft:vertical_tail:moment_ratio  2.362  unitless
   &#39;aircraft:vertical_tail:volume_coefficient  0.145  unitless
   &#39;mission:takeoff:lift_over_drag  17.354  unitless
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[runnervm8df0l:05374] pml_ucx.c:313  Error: Failed to create UCP worker
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>================================
@@ -802,9 +801,7 @@ traj.phases.cruise.rhs_all.aerodynamics
 =======================================
 NL: Newton 0 ; 2.79973531e-06 1
 NL: Newton 1 ; 4.7494371e-10 0.00016963879
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NL: Newton 2 ; 1.63709129e-17 5.84730736e-12
+NL: Newton 2 ; 1.63709129e-17 5.84730736e-12
 NL: Newton Converged
 
 =====================================
@@ -833,7 +830,9 @@ traj.phases.descent.rhs_all.solver_sub
 ======================================
 NL: Newton 0 ; 0.123936174 1
 NL: Newton 1 ; 0.00368329355 0.0297192776
-NL: Newton 2 ; 1.81425003e-05 0.000146385836
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NL: Newton 2 ; 1.81425003e-05 0.000146385836
 NL: Newton 3 ; 1.11462393e-18 8.9935319e-18
 NL: Newton Converged
 </pre></div>
